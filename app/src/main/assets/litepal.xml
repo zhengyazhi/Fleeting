@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="fleetingdata"></dbname>
+    <version value="6"></version>
+
+    <list>
+        <mapping class="com.example.fleeting.db.admin"/>
+        <mapping class="com.example.fleeting.db.schedule"/>
+        <mapping class="com.example.fleeting.db.diarycontent"/>
+        <mapping class="com.example.fleeting.db.Tomatonumber"/>
+    </list>
+</litepal>

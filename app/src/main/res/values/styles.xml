@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">  //指定一个不带ActionBar的主题，使用ToolBar代替ActionBar
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="date_picker_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Anim_translate" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/translate</item>
+    </style>
+    <style name="translate" parent="@android:style/Animation.Activity">  
+               <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>  
+               <item name="android:activityOpenExitAnimation">@anim/slide_out_right</item>  
+               <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>  
+               <item name="android:activityCloseExitAnimation">@anim/slide_out_left</item>  
+    </style>
+
+</resources>
+

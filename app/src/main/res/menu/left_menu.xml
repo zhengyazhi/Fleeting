@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/tomatoButton"
+            android:title="番茄"
+            android:icon="@drawable/tomato"/>
+        <item
+            android:id="@+id/unfinish"
+            android:title="往期未完成事件"
+            android:icon="@drawable/nodone"/>
+        <item
+            android:id="@+id/finish"
+            android:title="往期已完成事件"
+            android:icon="@drawable/done"/>
+        <item
+            android:id="@+id/count"
+            android:title="统计"
+            android:icon="@drawable/summary"/>
+        <item
+            android:id="@+id/diary"
+            android:title="日记本"
+            android:icon="@drawable/rijiben"/>
+        <item
+            android:id="@+id/contact"
+            android:title="我的好友"
+            android:icon="@drawable/red_contact"/>
+        <item
+            android:id="@+id/setting"
+            android:title="关于我们"
+            android:icon="@drawable/about"/>
+    </group>
+</menu>

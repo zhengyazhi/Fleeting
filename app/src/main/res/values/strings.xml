@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fleeting</string>
+    <string name="ADD_TIME">增加记录</string>
+
+    <string name="calendar_behavior" translatable="false">com.example.fleeting.behavior.CalendarBehavior</string>
+    <string name="calendar_scrolling_behavior" translatable="false">com.example.fleeting.behavior.CalendarScrollBehavior</string>
+
+</resources>

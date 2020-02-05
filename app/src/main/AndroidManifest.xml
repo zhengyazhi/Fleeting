@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fleeting">
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ContactActivity"></activity>
+        <activity android:name=".left_menu.unfinishscheduleActivity" />
+        <activity android:name=".left_menu.finishscheduleActivity" />
+        <activity android:name=".left_menu.countActivity" />
+        <activity android:name=".left_menu.AboutActivity" />
+        <activity android:name=".DetailContentActivity" />
+        <activity android:name=".left_menu.diaryActivity" />
+        <activity android:name=".left_menu.adddiary" />
+        <activity android:name=".widget.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SechdueDetailActivity" />
+        <activity android:name=".left_menu.TomatoWorkActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+
+        <service
+            android:name=".utils.AlarmService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
+
+        <receiver
+            android:name=".utils.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+</manifest>
